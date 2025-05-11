@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Color(0XFF00A884)),
         useMaterial3: false,
+        fontFamily: "Regular"
       ),
       home: Splashscreen(),
     );
