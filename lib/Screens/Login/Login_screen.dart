@@ -34,7 +34,7 @@ class _LoginScreenState extends State<LoginScreen> {
           Center(
             child: uihelper().Customtext(
                 text: "Enter your phone number",
-                height: 18,
+                height: 16,
                 fontweight: FontWeight.bold,
                 color: Color(0xff00A884)),
           ),
@@ -42,11 +42,11 @@ class _LoginScreenState extends State<LoginScreen> {
             height: 30,
           ),
           uihelper().Customtext(
-              text: "WhatsApp will need to verify your phone", height: 16),
+              text: "WhatsApp will need to verify your phone", height: 12),
           uihelper().Customtext(
-              text: "number. Carrier charges may apply.", height: 16),
+              text: "number. Carrier charges may apply.", height: 12),
           uihelper().Customtext(
-              text: "What’s my number?", height: 16, color: Color(0xff00A884)),
+              text: "What’s my number?", height: 12, color: Color(0xff00A884)),
           SizedBox(
             height: 50,
           ),

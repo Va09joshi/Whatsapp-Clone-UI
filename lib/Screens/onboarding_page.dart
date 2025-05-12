@@ -29,10 +29,10 @@ class _OnboardingPageState extends State<OnboardingPage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                uihelper().Customtext(text: "Read out", height: 14),
-                uihelper().Customtext(text: " Privacy Policy. ", height: 14,color: Color(0xff0C42CC)),
+                uihelper().Customtext(text: "Read out", height: 12),
+                uihelper().Customtext(text: " Privacy Policy. ", height: 12,color: Color(0xff0C42CC)),
 
-                uihelper().Customtext(text: "Tap “Agree and continue” ", height: 14),
+                uihelper().Customtext(text: "Tap “Agree and continue” ", height: 12),
 
               ],
 
@@ -42,8 +42,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
             ), Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                uihelper().Customtext(text: " to accept the", height: 14),
-                uihelper().Customtext(text: " Teams of Service. ", height: 14,color: Color(0xff0C42CC)),
+                uihelper().Customtext(text: " to accept the", height: 12),
+                uihelper().Customtext(text: " Teams of Service. ", height: 12,color: Color(0xff0C42CC)),
               ],
             )
           ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/Profile/ProfileScreen.dart';
 
 import '../../Widgets/Uihelper.dart';
 
@@ -26,7 +27,7 @@ class Otpscreen extends StatelessWidget {
               Center(
                 child: uihelper().Customtext(
                     text: "Verifying your number",
-                    height: 18,
+                    height: 16,
                     fontweight: FontWeight.bold,
                     color: Color(0xff00A884)),
               ),
@@ -35,20 +36,20 @@ class Otpscreen extends StatelessWidget {
               ),
               uihelper().Customtext(
                   text: "You’ve tried to register +91${phonenumber}"
-                  , height: 16),
+                  , height: 12),
               uihelper().Customtext(
-                  text: "recently. Wait before requesting an sms or a call.", height: 16),
+                  text: "recently. Wait before requesting an sms or a call.", height: 12),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   uihelper().Customtext(
-                      text: " with your code.", height: 16),
+                      text: " with your code.", height: 12),
                   GestureDetector(
                     onTap: (){
                       Navigator.pop(context);
                     },
                     child: uihelper().Customtext(
-                        text: " Wrong number?", height: 16, color: Color(0xff00A884)),
+                        text: " Wrong number?", height: 12, color: Color(0xff00A884)),
                   )
                 ],
               ),
@@ -74,12 +75,17 @@ class Otpscreen extends StatelessWidget {
               SizedBox(
                 height: 30,
               ),
-              uihelper().Customtext(text: "Didn’t receive code?", height: 16,color: Color(0xff00A884))
+              uihelper().Customtext(text: "Didn’t receive code?", height: 12,color: Color(0xff00A884))
 
             ],
         ),
       ),
-      floatingActionButton: uihelper().Custombutton(callback: (){}, buttonname: "Next"),
+      floatingActionButton: uihelper().Custombutton(callback: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context){
+          return Profilescreen();
+        }));
+
+      }, buttonname: "Next"),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
